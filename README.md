@@ -1,5 +1,5 @@
 # Dev-Web
-Programas del curso de programacion web (HTML, CSS, JS, PHP) 
+Programas del curso de programación web (HTML, CSS, JS, PHP) 
 
 *Contiene programas de fundamento y principios del desarrollo web*
 

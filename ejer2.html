@@ -1,0 +1,63 @@
+<!--La aplicacion de coolors, nos permite eliegir la colografia-->
+<html>
+    <head>
+        <title>Ejercicio 2</title>
+        
+        <!--elemento(name)/id(#)/clase(.) -->
+        <!--Buscar CSS3 Cheat Sheet-->
+        <style>
+            body{
+                font-family: verdana;
+
+            } 
+            td { /*Formato a las columnas*/
+                width: 100px;
+                height: 50px;
+            }
+
+            table { /*Formato a la caja de la tabla*/
+                border-radius: 15px;
+                background-color: #3AA7A3;
+                padding: 15px;
+
+                /*margin: Separacion del elemento original (top, left, right, bottom)
+                  padding: Expansion del elemento (estirar)*/
+            }
+            #institucion{ /*Formato a la etiqueta con id institucion*/
+                background-color: #5EC2B7;
+                color: white;
+                border-radius: 15px; 
+            }
+
+            img /*Formato a la imagen*/
+            {   width: 150px;
+                height: 200px;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <table> <!--Forma de crear una tabla-->
+            <tr><!--Filas de la tabla -->
+                <td rowspan=4><img src="C:\Users\ORIENTE\Downloads\OIP.jpg"></td> <!--rowspan= funcion para combinar filas en un cierto rango, lo mismo con colspan-->
+                <td id="institucion">INSTITUCION</td> <!--Columnas de la tabla-->
+            </tr> 
+            <!--Puede cambiar la ruta de la imagen, solo es para ejemplo-->
+
+            <tr><!--Filas de la tabla -->
+                <!--<td></td> se comentaron para dar formato a la tabla-->
+                <td>Nombre: Fulano</td> <!--Columnas de la tabla-->
+            </tr>
+
+            <tr><!--Filas de la tabla -->
+                <!--<td></td> se comentaron para dar formato a la tabla-->
+                <td>Edad: 23 años</td> <!--Columnas de la tabla-->
+            </tr>
+
+            <tr><!--Filas de la tabla -->
+                <!--<td></td> se comentaron para dar formato a la tabla-->
+                <td>direccion</td> <!--Columnas de la tabla-->
+            </tr>
+        </table>
+    </body>
+</html>  

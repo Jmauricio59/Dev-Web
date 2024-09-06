@@ -1,145 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Rutina</title>
         <style>
-            body{
-                font-family: verdana;
+            body {
+                font-family: Verdana, sans-serif;
                 text-align: center;
-            } 
-            td { /*Formato a las columnas*/
+            }
+            table {
+                margin: 0 auto;
+                width: 90%;
+                max-width: 1000px;
                 padding: 20px;
+            }
+            td {
+                padding: 20px;
+                width: 200px;
+                height: 150px;
+                border-radius: 15px;
+                vertical-align: top;
+                text-align: left;
+            }
+            .card {
+                padding: 15px;
+                border-radius: 15px;
+                background-color: #32CBFF;
+            }
+            .card.alt {
+                background-color: #FAC9B8;
+            }
+            img {
+                display: flex;
+                margin: 20px auto;
                 width: 250px;
-                height: 80px;
-                border-radius: 15px;
-            }
-            h2{
-                border-radius: 15;
-                padding: 3px;
-            }
-
-            table { /*Formato a la caja de la tabla*/
-                border-radius: 15px;
-                padding: 150px;
-                /*margin: Separacion del elemento original (top, left, right, bottom)
-                  padding: Expansion del elemento (estirar)*/
-            }
-            #text1{ /*Formato a la etiqueta con id institucion*/
-                background-color: #32CBFF;
-                color: white;
-                border-radius: 15px; 
-                width: 50px;
-                height: 25px;
-            }
-
-            #text2{ /*Formato a la etiqueta con id institucion*/
-                background-color: #32CBFF;
-                color: white;
-                border-radius: 15px; 
-            }
-
-            #text3{ /*Formato a la etiqueta con id institucion*/
-                background-color: #FAC9B8;
-                color: white;
-                border-radius: 15px; 
-            }
-
-            #text4{ /*Formato a la etiqueta con id institucion*/
-                background-color: #FAC9B8;
-                color: white;
-                border-radius: 15px; 
-            }
-            #text5{ /*Formato a la etiqueta con id institucion*/
-                background-color: #32CBFF;
-                color: white;
-                border-radius: 15px; 
-            }
-
-            #text6{ /*Formato a la etiqueta con id institucion*/
-                background-color: #FAC9B8;
-                color: white;
-                border-radius: 15px; 
-            }
-
-
-            img /*Formato a la imagen*/
-            {   width: 150px;
                 height: 200px;
-                border-radius: 25px;
+            }
+            .text{
+                color: white; 
+                background-color: #025669;
+                text-align: center;
+                border-radius: 15px;
+                width:auto;
+                height: auto;
             }
         </style>
     </head>
     <body>
-        <table border> <!--Forma de crear una tabla-->
-            <tr><!--Filas de la tabla -->
-                <h2>Prueba esta rutina si quieres....</h2> <!--Columnas de la tabla-->
-            </tr>
-            
-            <tr><!--Filas de la tabla -->
-                <td rowspan=5>
-                <td id="text1"><h4>Crear confianza</h4>
-                    <li>
-                         Hacer la cama
-                    </li>
-                    <li>
-                        Usar algo que le encante
-                    </li>
-                    <li>
-                        Recitar autoafirmaciones
-                    </li>
+        <h2>Prueba esta rutina si quieres...</h2>
+        <table>
+            <tr>
+                <td></td>
+                <td class="card"><h4 class="text">Crear confianza</h4>
+                    <ul>
+                        <li>Hacer la cama</li>
+                        <li>Usar algo que te encante</li>
+                        <li>Recitar autoafirmaciones</li>
+                    </ul>
+                </td>
+                <td></td>
+                <tr>
+                    <td class="card alt"><h4 class="text">Mantenerse enfocado</h4>
+                        <ul>
+                            <li>Escribir tu lista de tareas</li>
+                            <li>Beber agua</li>
+                            <li>Limitar el tiempo de pantalla</li>
+                        </ul>
+                    </td>
+                    <td rowspan="2" ><img src="https://png.pngtree.com/png-clipart/20230508/original/pngtree-human-brain-vector-images-png-image_9149149.png"></td>
+                    <td class="card"><h4 class="text">Sentirse conectado</h4>
+                        <ul>
+                            <li>Meditar</li>
+                            <li>Llamar a un ser querido</li>
+                            <li>Llevar un diario</li>
+                        </ul>
+                    </td>
+                </tr>
+                <td class="card"><h4 class="text">Tomar un descanso</h4>
+                    <ul>
+                        <li>Pasar tiempo afuera</li>
+                        <li>Escuchar música</li>
+                        <li>Beber café o té</li>
+                    </ul>
+                    <td class="card alt"><h4 class="text">Ser más saludable</h4>
 
-                <td id="text2"><h4>Sentirse conectado</h4>
-                        <li>
-                             Meditar
-                        </li>
-                        <li>
-                            Llamar un ser querido
-                        </li>
-                        <li>
-                            llevar un diario
-                        </li>
-
-                    <td id="text3"><h4>Ser mas saludable</h4>
-                            <li>
-                                 Hacer estiramiento
-                            </li>
-                            <li>
-                                Tomar un poco de sol
-                            </li>
-                            <li>
-                                Mover el cuerpo
-                            </li>
-                    <td id="text4"><h4>Agudizar tu mente</h4>
-                                <li>
-                                     Hacer un volcado de cerebro
-                                </li>
-                                <li>
-                                    Leer un capitulo
-                                </li>
-                                <li>
-                                    Dar un paseo
-                                </li>
-                                <td id="text5"><h4>Tomar un descanso</h4>
-                                    <li>
-                                         Pasar tiempo afuera
-                                    </li>
-                                    <li>
-                                        Escuchar musica
-                                    </li>
-                                    <li>
-                                        Beber cafe o te
-                                    </li>
-                                    <td id="text6"><h4>Mantenerse enfocado</h4>
-                                        <li>
-                                             Escribe tu lista de tareas
-                                        </li>
-                                        <li>
-                                            Beber agua
-                                        </li>
-                                        <li>
-                                            Estar en pantalla durante 2 horas
-                                        </li>
-                </td> <!--Columnas de la tabla-->
+                        <ul>
+                            <li>Hacer estiramientos</li>
+                            <li>Tomar un poco de sol</li>
+                            <li>Mover el cuerpo</li>
+                        </ul>
+                    </td>
+                </td>
+                <tr></tr>
+                <td></td>
+                <td class="card alt"><h4 class="text">Agudizar tu mente</h4>
+                    <ul>
+                        <li>Hacer un volcado de cerebro</li>
+                        <li>Leer un capítulo</li>
+                        <li>Dar un paseo</li>
+                    </ul>
+                </td>
+                <tr>
             </tr>
         </table>
     </body>
-</html>  
+</html>

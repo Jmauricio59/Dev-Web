@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Colores con Divs</title>
+    
+<style>
+    body 
+        {
+            background-color: yellowgreen;
+        }
+
+    .color-div 
+        {
+            width: 100px;
+            height: 100px;
+            padding: 180px;
+            display: flex;
+            margin: 18px;
+        }
+
+        #divAzul { background-color: purple; }
+        #divVerde { background-color: teal; }
+        #divRojo { background-color: orange; }
+
+</style>
+    
+    <script>
+    
+        function cambiarFondo(color) 
+        {
+            document.body.style.backgroundColor = color;
+        }
+
+        function quitarFondo() 
+        {
+            document.body.style.backgroundColor = 'lightgray';
+        }
+    
+    </script>
+</head>
+
+<body>
+
+    <div id="divAzul" class="color-div" onmouseover="cambiarFondo('purple')" onmouseout="quitarFondo()"></div>
+    <div id="divVerde" class="color-div" onmouseover="cambiarFondo('teal')" onmouseout="quitarFondo()"></div>
+    <div id="divRojo" class="color-div" onmouseover="cambiarFondo('orange')" onmouseout="quitarFondo()"></div>
+
+</body>
+</html>
